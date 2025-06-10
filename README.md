@@ -71,7 +71,7 @@ sbatch --array=1-40%5 amplicon_suite.slurm
 ## Command line arguments to AmpliconSuite-pipeline
 #### Required
 - `-o  {outdir}`: Directory where results will be stored. Include the sample name to avoid conflicts.
-- `--data_repo {repodir} `:  Directory where the singularity image file and  required annotations for GRCh37 are stored.
+- `--data_repo {repodir} `:  Directory where the singularity image file and  required annotations for GRCh38 are stored.
 - `-t ` : Number of threads but it's not really used so just set it to 1.
   
 Input files:
