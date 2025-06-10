@@ -9,6 +9,12 @@ The original code and instructions are from https://github.com/AmpliconSuite/Amp
          ```bash
          tar zxf   GRCh38.tar.gz.gz
          ```
+    * Download the singularity image
+      ```bash
+       singularity pull library://jluebeck/ampliconsuite-pipeline/ampliconsuite-pipeline
+      ```
+    * Put both inside a folder named data_repo
+
 2. Obtain the execution script
     ```bash
     git clone https://github.com/uretaj/as_brainmets_v2/.git
