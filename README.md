@@ -23,7 +23,7 @@ The original code and instructions are from https://github.com/AmpliconSuite/Amp
         ```
 An example command might look like:
 
-`amplicon_suite_ppcg/singularity/run_paa_singularity.py -o path/to/output_dir/sample  --bam sample.bam  --scna_file sample.txt --data_repo path/to/data_repo `
+`as_brainmets_v2/singularity/run_paa_singularity.py -o path/to/output_dir/sample  --bam sample.bam  --scna_file sample.txt --data_repo path/to/data_repo `
 
 
 Below is a sample Slurm file:
@@ -55,7 +55,7 @@ echo "SAMPLE ${sample}"
 echo "FILENAME ${cnv}"
 pathf="BAM/${sample}.mapped.bam"
 cnvpath="Subclonal_SCNA_with_Avg_CN/${cnv}
-amplicon_suite_ppcg/singularity/run_paa_singularity.py  -o AA_RESULT/${sample} -t 1 --bam ${pathf}  --scna_file ${cnvpath} --data_repo path/data_repo
+as_brainmets_v2/singularity/run_paa_singularity.py  -o AA_RESULT/${sample} -t 1 --bam ${pathf}  --scna_file ${cnvpath} --data_repo path/data_repo
 ```
 Here's an example of how to submit a job arrray to run multiple samples (i.e. execute the script for 40 samples but only run 5 samples at a time)
 
